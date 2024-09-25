@@ -5375,11 +5375,11 @@ static u8 fuzz_one(char** argv) {
 
   ck_free(field_name);
   ck_free(fname);
+   // Prevent tmp dirs
+  //u8 *cmd = alloc_printf("rm -r %s", temp_dir);
 
-  u8 *cmd = alloc_printf("rm -r %s", temp_dir);
-
-  system(cmd);
-  ck_free(cmd); 
+  //system(cmd);
+  //ck_free(cmd); 
 
   /*********************
    * PERFORMANCE SCORE *
