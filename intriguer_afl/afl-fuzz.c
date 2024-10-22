@@ -5357,7 +5357,7 @@ static u8 fuzz_one(char** argv) {
     cmd = alloc_printf("python %s -s 1 -t %d -i %s -o %s -- %s > /dev/null 2> /dev/null",
         intriguer_path, intriguer_timeout, fname, temp_dir, intriguer_cmd);
 
-    // printf("cmd: %s\n", cmd);
+    printf("cmd: %s\n", cmd);
     system(cmd);
     
     ck_free(intriguer_cmd);
